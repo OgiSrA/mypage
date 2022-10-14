@@ -1,94 +1,148 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- 웹페이지 보이지는 않지만, 필요한 설정을 해두는 곳이에요.
-             우리가 집을 위해 미리 생각 해놓은 것을 적어두는 곳이라고 할 수 있죠!-->
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta property="og:title" content="르탄이 - 프로필 링크" />
-        <meta property="og:description" content="어서와 코딩은 처음이지?" />
-        <meta property="og:image" content="공유할 이미지" />
-        <title>오기스라 - 프로필 링크</title>
-        <style>
-            @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
-*          {
-                font-family: "Pretendard",serif;
-            }
-
-            body{
-                background-color: #44398A;
-            }
-            .profile {
-                width: 100px;
-                height: 100px;
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="OgiSrA">
+    <meta property="og:description" content="오기스라 이야기">
+    <meta property="og:image" content="">
+    <title>OgiSrA</title>
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        * {
+            font-family: "Pretendard",serif;
+        }
+        body {
+            background: linear-gradient(180deg, #362f63 500%, #44398A 100%);
+            height: 100vh;
+          }
+        .profile {
+            width: 100px;
+            height: 100px;
                
-                border-radius: 100%;
-                border: 2px solid white;
-                background-image: url('ogisra.png');
-                background-position: center;
-                background-size: cover;
-            }
-            .main {
-                color: white;
-                font-size: 20px;
-
-                margin-top: 30px;
-                margin-bottom: 10px;
-            }
-            .sub {
-                color: white;
-                font-size: 14px;
-
-                margin-top: 0px;
-                margin-bottom: 30px;
-            }
-            .wrap{
-               
-                width: 300px;
-                margin: 30px auto 0px auto;
-                
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-            .wrap > a {
-                width: 300px;
-                height: 50px;
-
-                background-color: white;
-                border-radius: 8px;
-
-                margin-bottom: 10px;
-
-                font-size:  14;
-                font-weight: bold;
-                color: #44398a;
-                   
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-
-                text-decoration: none;
-
-                box-shadow: 3px 3px 5px 0px black;
-            }
-            .wrap > a:hover {
-                background-color: #f2f2f2;
-                
-            }
-
-        </style>
-    </head>
-    <body>
-        <div class="wrap">
-            <div class="profile"></div>
-            <h1 class="main">오기스라</h1>
-            <p class="sub"> 코딩 .... 좋아하세요?</p>  
-            <a target="_blank" href="https://ogisra.tistory.com/">오기스라 스토리</a>
+            border-radius: 100%;
+            border: 2px solid white;
+            background-image: url('ogisra.png');
+            background-position: center;
+            background-size: cover;
+        }
+        .main {
+            color : #000000;
+            font-size: 22px;
+            size : 20px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        .sub {
+            color : #ffffff;
+            font-size: 14px;
+            font-weight: 400;
+            size : 14px;
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
+        .wrap {
+            width: 300px;
+            margin: 30px auto 0px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .bigbutton {
+            width: 320px;
+            height: 59px;
+            border-radius: 8px;
+            background-color: white;
+            margin-bottom: 16px;
+            font-size: 14px;
+            font-weight: bold;
+            color:#000000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            box-shadow: 0px 4px 16px rgba(232, 52, 78, 0.2);
+        }
+        .buttons > a {
+            width: 152px;
+            height: 59px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: bold;
+            color:#a12b2b;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            box-shadow: 0px 4px 16px rgba(232, 52, 78, 0.2);
+            margin: 0px 8px 17px 8px;
+        }
+        .bigbutton1 {
+            width: 320px;
+            height: 59px;
+            border-radius: 8px;
+            background-color: white;
+            margin-bottom: 16px;
+            font-size: 14px;
+            font-weight: bold;
+            color:#000000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            box-shadow: 0px 4px 16px rgba(232, 52, 78, 0.2);
+        }
+        .buttons1 > a {
+            width: 152px;
+            height: 59px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: bold;
+            color:#FFFFFF;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            box-shadow: 0px 4px 16px rgba(232, 52, 78, 0.2);
+            margin: 0px 8px 17px 8px;
+        }
+        .dding {
+            background-color: #3c80ff;
+        }
+        .online {
+            background-color: #e8344e;
+        }
+        .hang {
+            background-color: #f50000;
+        }
+        .chang {
+            background-color: #0f16ae;
+        }
+        .buttons {
+            display: flex;
+        }
+        .wrap > a:hover {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="profile"></div>
+        <h1 class="main">OgiSrA</h1>
+        <p class="sub">오기스라 이야기</p>
+        <a class="bigbutton"target="_blank" href="https://www.youtube.com/channel/UC99mHdWYB3Syyk8f0Kfee7Q">🌕 OgiSrA youtube </a>
+        <a class="bigbutton1"target="_blank" href="https://ogisra.tistory.com/">🔴 OgiSrA tistory </a>
+        <div class="buttons">
+            <a class="dding" target="_blank" href="https://www.facebook.com/sungyun.park.96">Meta</a>
+            <a class="online"target="_blank" href="">OgiSrA</a>
         </div>
-     
-    </body>
+    </div>
+</body>
 </html>
